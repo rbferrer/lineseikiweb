@@ -1,0 +1,3 @@
+btn btn-success > green
+btn btn-primary > blue
+btn btn-danger > red
