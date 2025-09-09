@@ -49,7 +49,9 @@ $autoload['libraries'] = array('session');
 |
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
-$autoload['libraries'] = array('database','session','form_validation', 'pagination','system_functions');
+// $autoload['libraries'] = array('database','session','form_validation', 'pagination','system_functions');
+$autoload['libraries'] = array('session','form_validation','pagination','system_functions');
+
 /*
 | -------------------------------------------------------------------
 |  Auto-load Helper Files
