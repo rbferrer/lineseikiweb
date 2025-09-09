@@ -50,7 +50,8 @@ $autoload['libraries'] = array('session');
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 // $autoload['libraries'] = array('database','session','form_validation', 'pagination','system_functions');
-$autoload['libraries'] = array('session','form_validation','pagination','system_functions');
+// $autoload['libraries'] = array('session','form_validation','pagination','system_functions');
+// $autoload['libraries'] = array('session','form_validation','pagination');
 
 /*
 | -------------------------------------------------------------------
@@ -96,6 +97,6 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('model1', 'model2');
 |
 */
-$autoload['model'] = array('login/login_model','templates/header_model');
+// $autoload['model'] = array('login/login_model','templates/header_model');
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
