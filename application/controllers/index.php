@@ -26,7 +26,7 @@ class index extends CI_Controller
 
   function contact_us()
   {
-    var_dump("Page under construction");
+    $this->load->view('contactus');
   }
 
   function library()

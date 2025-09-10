@@ -148,9 +148,9 @@
             </ul>
           </li>
 
-          <li class="nav-item"><a class="nav-link" href="#">News & Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="news_event">News & Events</a></li>
           <li class="nav-item"><a class="nav-link active" href="library">Library</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact_us">Contact Us</a></li>
         </ul>
       </div>
     </div>
