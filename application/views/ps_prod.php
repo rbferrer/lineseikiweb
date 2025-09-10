@@ -244,7 +244,7 @@
       color:#ffd60a;                     /* yellow text */
       border-radius:8px;
       padding:8px 18px;
-      font-weight:600;
+      font-weight:400;
       font-size:1rem;
       transition: background .12s ease, color .12s ease, transform .12s ease;
     }
@@ -298,7 +298,7 @@
           </li>
 
           <li class="nav-item"><a class="nav-link" href="#">News and Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+          <li class="nav-item"><a class="nav-link" href="library">Library</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
         </ul>
       </div>

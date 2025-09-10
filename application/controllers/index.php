@@ -31,7 +31,7 @@ class index extends CI_Controller
 
   function library()
   {
-    var_dump("Page under construction");
+    $this->load->view('library');
   }
 
   function news_event()

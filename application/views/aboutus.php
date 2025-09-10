@@ -149,7 +149,7 @@
           </li>
 
           <li class="nav-item"><a class="nav-link" href="#">News and Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+          <li class="nav-item"><a class="nav-link" href="library">Library</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
         </ul>
       </div>
