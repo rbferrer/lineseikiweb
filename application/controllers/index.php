@@ -36,7 +36,7 @@ class index extends CI_Controller
 
   function news_event()
   {
-    var_dump("Page under construction");
+    $this->load->view('newsevent');
   }
 
   function ps_iotsolution()

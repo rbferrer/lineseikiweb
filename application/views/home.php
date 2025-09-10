@@ -164,7 +164,7 @@
   <div class="container-fluid">
     <!-- Logo on the LEFT -->
     <a class="navbar-brand" href="#">
-      <img src="assets_system/images/header_logo.png" alt="Line Seiki Logo">
+      <img src="<?= base_url('assets_system/images/header_logo.png') ?>" alt="Line Seiki Logo">
     </a>
 
     <!-- Toggler for mobile -->

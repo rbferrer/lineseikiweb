@@ -283,7 +283,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="resources/header_logo.png" alt="Line Seiki Logo">
+        <img src="<?= base_url('assets_system/images/header_logo.png') ?>" alt="Line Seiki Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -417,7 +417,7 @@
     </div>
     <p>We’re here to assist with your inquiries and needs.</p>
     <div class="middle">
-      <img src="resources/header_logo.png" alt="Logo">
+      <img src="<?= base_url('assets_system/images/header_logo.png') ?>" alt="Logo">
       <div class="links">
         <a href="#">Product Overview</a>
         <a href="#">Engineering Services</a>
