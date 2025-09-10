@@ -1,265 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Line Seiki Asia Pacific</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - Line Seiki Asia Pacific</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    * {margin:0; padding:0; box-sizing:border-box; font-family:Arial, Helvetica, sans-serif;}
-    body {background-color:#0f0a07; color:white; line-height:1.6; padding-top:80px;}
-
-    /* Navigation Bar */
-    .header {
-      position: fixed;
-      top: 0; left: 0; width: 100%;
-      padding: 20px 10%;
-      background: #000; color: #fff;
-      display: flex; justify-content: space-between; align-items: center;
-      z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    }
-    .header .logo {height: 40px; width: auto;}
-    .navbar a {
-      font-size: 1rem; color: #fff; text-decoration: none;
-      font-weight: 500; margin-left: 35px; transition: color 0.3s ease;
-    }
-    .navbar a:hover, .navbar a.active {color: #ff6a5c;}
-    .hamburger-icon {display:none; font-size:1.5rem; cursor:pointer;}
-    .menu-toggle {display:none;}
-    @media(max-width:992px){
-      .hamburger-icon{display:block;}
-      .navbar{
-        position:absolute; top:100%; left:0; width:100%;
-        background:rgba(0,0,0,0.9);
-        flex-direction:column; align-items:center; padding:20px 0;
-        transform:translateY(-100%); opacity:0; pointer-events:none;
-        transition:all 0.5s ease;
-      }
-      .menu-toggle:checked ~ .navbar{
-        transform:translateY(0); opacity:1; pointer-events:auto;
-      }
-      .navbar a{margin:15px 0; display:block; text-align:center;}
+    body {
+      background-color: white;
+      color: black;
+      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* Sections */
-    section {
-      display:flex; justify-content:space-between; align-items:center;
-      padding:0 10%; gap:50px; min-height:100vh;
+    /* ✅ Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #0d1b2a, #1b263b);
+      padding: 0.8rem 5%;
     }
-    section:nth-child(even) {flex-direction:row-reverse; background:#fff; color:#000;}
-    section img {width:60%; max-width:800px; height:auto; border-radius:12px;}
-    h1,h2 {font-size:2.5rem; margin-bottom:20px;}
-    p {margin-bottom:20px; max-width:500px;}
-
-    /* Partners */
-    .partners {flex-direction:column; text-align:center; padding:130px 10%; background: white; color: black;}
-    .partners h2 {margin-bottom:50px;}
-    .partners-logos {display:flex; justify-content:center; flex-wrap:wrap; gap:40px; margin-top:20px;}
-    .partners-logos img {height:60px; filter:grayscale(100%); transition:0.3s;}
-    .partners-logos img:hover {filter:grayscale(0); transform:scale(1.1);}
-
-    .partners-logos img {
-    height: 150px;   /* increase size */
-    max-width: 200px; /* optional: keep logos from getting too wide */
-    object-fit: contain; /* keeps aspect ratio */
-    filter: grayscale(0%);
-    transition: 0.3s;
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffd60a;
+    }
+    .dropdown-menu {
+      background-color: #1b263b;
+      border: none;
+      border-radius: 8px;
+    }
+    .dropdown-menu a {
+      color: #fff;
+    }
+    .dropdown-menu a:hover {
+      background-color: #ffd60a;
+      color: #000;
+    }
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+    }
+    .dropdown-submenu {
+      position: relative;
+    }
+    .dropdown-submenu > .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -0.1rem;
     }
 
-
-
-
-    /* CTA */
-    .cta {flex-direction:column; text-align:center; background:#000; color:#fff; padding:60px 10%;}
-    .cta h2 {font-size:1.8rem; margin-bottom:15px;}
-    .cta p {max-width:500px; margin:0 auto 20px; font-size:0.95rem;}
-    .btn {padding:10px 20px; border-radius:20px; border:none; cursor:pointer; font-size:0.95rem;}
-    .btn-primary {background:#ff6a5c; color:#fff; transition:all 0.3s ease;}
-    .btn-primary:hover {background:#e85a4a; transform:translateY(-2px); box-shadow:0 4px 10px rgba(0,0,0,0.2);}
-
-    /* Footer */
-    footer {background:#0f0a07; color:white; padding:40px 10%; text-align:left;}
-    footer .top {display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;}
-    footer .top h2 {font-size:1.8rem;}
-    footer .top div {display:flex; gap:15px;}
-    footer .middle {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; padding:20px 0; border-top:1px solid #333; border-bottom:1px solid #333;}
-    footer .middle img {height:40px; width:auto;}
-    footer .links {display:flex; gap:20px;}
-    footer .links a {color:white; text-decoration:none; font-size:0.95rem;}
-    footer .links a:hover {text-decoration:underline;}
-    footer .socials {display:flex; gap:15px; font-size:1.3rem;}
-    footer .socials a {color:white; transition:color 0.3s ease;}
-    footer .socials a:hover {color:#ff6a5c;}
-    footer .bottom {margin-top:15px; font-size:0.85rem; display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
-    footer .bottom a {color:white; text-decoration:none;}
-    footer .bottom a:hover {text-decoration:underline;}
-
-    @media(max-width:992px){
-      section{flex-direction:column; text-align:center; padding:40px 5%;}
-      section:nth-child(even){flex-direction:column;}
-      section img{width:100%; max-width:500px;}
-      h1,h2{font-size:2rem;}
+    /* ✅ Products Section */
+    .products {
+      padding: 100px 10% 60px; /* extra padding for navbar offset */
+      text-align: center;
     }
- /* CTA Section */
-.cta {
-  display: flex !important;         /* make sure it overrides */
-  flex-direction: column !important; /* stack vertically */
-  align-items: center !important;    /* center horizontally */
-  justify-content: center !important;/* center vertically */
-  text-align: center;
-  background: #000;   /* black background */
-  color: #fff;
-  padding: 80px 10%;
-  min-height: 40vh;
-}
+    .products h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .category {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .category img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .category:hover img {
+      transform: scale(1.1);
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .category:hover .overlay {
+      opacity: 1;
+    }
+    .overlay h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #ff6a5c;
+    }
+    .overlay p {
+      font-size: 0.9rem;
+    }
 
-.cta h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
+    /* ✅ CTA Section (keeps dark navy look) */
+    .cta {
+      background: #0a1423;
+      color: white;
+      text-align: center;
+      padding: 60px 10%;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .cta p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
 
-.cta p {
-  max-width: 600px;
-  margin: 0 auto 20px;
-  font-size: 1rem;
-}
+    /* ✅ Footer base styling */
+    footer {
+      background-color: #0a1423; /* dark navy background like screenshot */
+      color: white;
+      padding: 40px 10%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-.cta .btn-primary {
-  background: #ff6a5c;
-  color: #fff;
-  padding: 12px 28px;
-  font-size: 1rem;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
+    footer h2 {
+      color: #ffd60a; /* Yellow "Get in Touch with Us" */
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
 
-.cta .btn-primary:hover {
-  background: #e85a4a;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
+    footer p {
+      margin: 0 0 20px 0;
+      font-size: 0.95rem;
+    }
 
-/* Secondary Button */
-.btn-secondary {
-  background: transparent;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 0.95rem;
-  border-radius: 20px;
-  border: 1px solid white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+    footer .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
 
-/* Hover effect */
-.btn-secondary:hover {
-  background: #ff6a5c;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
+    footer .middle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      margin-bottom: 15px;
+    }
 
+    footer .middle img {
+      height: 40px;
+      width: auto;
+    }
 
+    footer .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
+    footer .links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    footer .links a:hover {
+      text-decoration: underline;
+      color: #ffd60a;
+    }
+
+    footer .socials {
+      display: flex;
+      gap: 15px;
+      font-size: 1.2rem;
+    }
+    footer .socials a {
+      color: white;
+      transition: color 0.3s ease;
+    }
+    footer .socials a:hover {
+      color: #ffd60a;
+    }
+
+    footer .bottom {
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 15px;
+    }
+    footer .bottom a {
+      margin-left: 15px;
+      color: white;
+      text-decoration: none;
+    }
+    footer .bottom a:hover {
+      text-decoration: underline;
+      color: #ffd60a;
+    }
+
+    .btn-contact{
+      display:inline-block;
+      background:#007bff;        /* solid blue */
+      border:0;
+      color:#fff;
+      border-radius:8px;
+      padding:10px 20px;
+      font-weight:600;
+      font-size:1rem;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.12);
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    }
+    .btn-contact:hover{
+      background:#0069d9;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+
+    .btn-consult{
+      display:inline-block;
+      background:transparent;            /* transparent background */
+      border:1px solid #ffd60a;          /* yellow border */
+      color:#ffd60a;                     /* yellow text */
+      border-radius:8px;
+      padding:8px 18px;
+      font-weight:600;
+      font-size:1rem;
+      transition: background .12s ease, color .12s ease, transform .12s ease;
+    }
+    .btn-consult:hover{
+      background:#ffd60a;                /* fill yellow on hover */
+      color:#000;                        /* black text on hover */
+      transform: translateY(-2px);
+    }
+
+    /* Slightly smaller buttons for footer area */
+    footer .btn-contact { padding:6px 14px; font-size:0.92rem; border-radius:6px; }
+    footer .btn-consult  { padding:6px 12px; font-size:0.92rem; border-radius:6px; }
+
+    /* If you want CTA buttons a bit larger for emphasis (optional) */
+    .cta .btn-contact { padding:11px 24px; font-size:1.02rem; }
+    .cta .btn-consult  { padding:10px 20px; font-size:1.02rem; }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="header">
-  <a href="#"><img src="resources/header_logo.png" alt="Line Seiki Logo" class="logo"></a>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
-  <label for="menu-toggle" class="hamburger-icon"><i class="fas fa-bars"></i></label>
-  <nav class="navbar">
-    <a href="newproject.html">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Services</a>
-    <a href="#">Case Studies</a>
-    <a href="#">Contact</a>
+  <!-- ✅ Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="newproject.html">
+        <img src=<?= base_url('assets_system/images/header_logo.png') ?> alt="Line Seiki Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Product and Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ps_prod">Products</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Simulation Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Silicone Molding & Urethane Casting</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">IoT Solution</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">News and Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-</header>
 
-  <!-- Header Section -->
-  <section class="section-1">
-    <div>
-      <h1>About Line Seiki Asia Pacific</h1>
-      <p>We are dedicated to providing precision measurement solutions and innovative technologies that help industries thrive. With decades of expertise, we stand as a trusted partner in measurement, monitoring, and engineering services.</p>
+ <!-- ✅ Products Section -->
+  <section class="products">
+    <h1>Our Product Categories</h1>
+    <div class="categories">
+      <!-- (Your product cards stay the same) -->
+      <!-- Example -->
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/safetyswitches.jpg')?> alt="Safety Switches">
+        <div class="overlay">
+          <h3>Safety Switches</h3>
+          <p>Durable switches designed for industrial safety applications.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/electroniccounter.jpg')?> alt="Electronic Counters">
+        <div class="overlay">
+          <h3>Electronic Counters</h3>
+          <p>Reliable counters for production monitoring and automation.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/timer.jpg')?> alt="Timers">
+        <div class="overlay">
+          <h3>Timers</h3>
+          <p>Accurate timers for industrial and laboratory use.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/mechanicalcounter.jpg')?> alt="Mechanical Counters">
+        <div class="overlay">
+          <h3>Mechanical Counters</h3>
+          <p>Classic counters built for long-term mechanical reliability.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/slidelimit.jpg')?> alt="Slide Limit Counters">
+        <div class="overlay">
+          <h3>Slide Limit Counters</h3>
+          <p>Compact and accurate slide limit counters for varied use.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/limitswitch.jpg')?> alt="Limit Switches">
+        <div class="overlay">
+          <h3>Limit Switches</h3>
+          <p>Precision limit switches for position sensing and control.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/countersensor.jpg')?> alt="Length Counters & Sensors">
+        <div class="overlay">
+          <h3>Length Counters & Sensors</h3>
+          <p>High-precision sensors for measuring length and dimensions.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/rotary.jpg')?> alt="Rotary Encoders">
+        <div class="overlay">
+          <h3>Rotary Encoders</h3>
+          <p>Encoders for accurate angular position and motion detection.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/tachometer.jpg')?> alt="Tachometers">
+        <div class="overlay">
+          <h3>Tachometers</h3>
+          <p>Digital tachometers for RPM and speed measurements.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/thermometers1.jpg')?> alt="Thermometers">
+        <div class="overlay">
+          <h3>Thermometers</h3>
+          <p>Precise thermometers for industrial and lab applications.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/measuring.jpg')?> alt="Measuring Instruments">
+        <div class="overlay">
+          <h3>Measuring Instruments</h3>
+          <p>Instruments designed for reliable industrial measurement.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src=<?= base_url('assets_system/images/tallycounter.png')?> alt="Tally Counters">
+        <div class="overlay">
+          <h3>Tally Counters</h3>
+          <p>Portable tally counters for manual counting needs.</p>
+        </div>
+      </div>
     </div>
-    <img src="resources/home_main.jpg" alt="About Us">
+    </div>
   </section>
 
-  <!-- Mission -->
-  <section>
-    <div>
-      <h2>Our Mission</h2>
-      <p>To deliver high-quality measuring instruments and innovative IoT solutions that empower businesses to improve efficiency, accuracy, and performance.</p>
-    </div>
-    <img src="resources/mission.jpg " alt="Mission">
-  </section>
 
-  <!-- Vision -->
-  <section>
-    <img src="resources/vision.jpg" alt="Vision">
-    <div>
-      <h2>Our Vision</h2>
-      <p>To be the leading provider of precision measurement and monitoring solutions across Asia Pacific, driving industrial innovation and shaping a smarter future.</p>
-    </div>
-  </section>
-
-  <!-- Partners -->
-  <section class="partners">
-    <h2>Our Partners & Associations</h2>
-    <div class="partners-logos">
-      <img src="resources/microsoft.jpg" alt="Partner 1">
-      <img src="resources/toyota.png" alt="Partner 2">
-      <img src="resources/Burgerking.png" alt="Partner 3">
-      <img src="resources/abscbn.png" alt="Partner 4">
-    </div>
-  </section>
-
+  <!--CTA Section (buttons updated) -->
   <section class="cta">
-  <h2>Let’s Work Together</h2>
-  <p>Join us in our mission to transform industries with precision and innovation. 
-     Discover how our solutions can help your business succeed.</p>
-  <button class="btn btn-primary">Get Started</button>
-</section>
+    <h2>Looking for the Right Measuring Solution?</h2>
+    <p>Contact us today to discuss your requirements and find the perfect product for your needs.</p>
+    <!-- use the new classes -->
+    <button class="btn btn-contact">Contact</button>
+    <button class="btn btn-consult">Consult</button>
+  </section>
 
-  <!-- Footer -->
+  <!--Footer (buttons updated) -->
   <footer>
-  <div class="top">
-    <h2>Get in Touch with Us</h2>
-    <div>
-      <button class="btn btn-primary">Contact</button>
-      <button class="btn btn-secondary">Consult</button>
+    <div class="top">
+      <h2>Get in Touch with Us</h2>
+      <div>
+        <button class="btn btn-contact">Contact</button>
+        <button class="btn btn-consult">Consult</button>
+      </div>
     </div>
-  </div>
-  <p>We’re here to assist with your inquiries and needs.</p>
-  <div class="middle">
-    <img src="resources/header_logo.png" alt="Logo">
-    <div class="links">
-      <a href="#">Product Overview</a>
-      <a href="#">Engineering Services</a>
-      <a href="#">Case Studies</a>
-      <a href="#">Latest News</a>
-      <a href="#">Contact Us</a>
-    </div>
-    <div class="socials">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-  </div>
-  <div class="bottom">
-    <span>© 2025 Line Seiki Asia Pacific. All rights reserved.</span>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Cookie Settings</a>
-  </div>
-</footer>
+    <p>We’re here to assist with your inquiries and needs.</p>
 
+    <div class="middle">
+      <img src= <?= base_url('assets_system/images/header_logo.png') ?> alt="Line Seiki Logo">
+      <div class="links">
+        <a href="#">Product Overview</a>
+        <a href="#">Engineering Services</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Latest News</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <span>© 2025 Line Seiki Asia Pacific. All rights reserved.</span>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Settings</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Submenu JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
+        element.addEventListener('click', function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          let submenu = this.nextElementSibling;
+          if(submenu){
+            submenu.classList.toggle('show');
+          }
+          this.closest('.dropdown-menu').querySelectorAll('.show').forEach(function(openMenu){
+            if(openMenu !== submenu){
+              openMenu.classList.remove('show');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function(){
+        document.querySelectorAll('.dropdown-menu .show').forEach(function(openMenu){
+          openMenu.classList.remove('show');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

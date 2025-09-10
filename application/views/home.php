@@ -177,7 +177,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
 
         <!-- Dropdown -->
         <li class="nav-item dropdown">
@@ -185,7 +185,7 @@
             Product and Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Products</a></li>
+            <li><a class="dropdown-item" href="ps_prod">Products</a></li>
 
             <!-- Submenu -->
             <li class="dropdown-submenu">
