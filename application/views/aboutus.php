@@ -69,7 +69,7 @@
     .partner-logos img {
       max-height: 80px;
       margin: 20px;
-      filter: grayscale(100%);
+      filter: grayscale(0%);
       transition: 0.3s;
     }
     .partner-logos img:hover {
@@ -112,7 +112,7 @@
     <div class="container-fluid">
       <!-- Logo on the LEFT -->
       <a class="navbar-brand" href="#">
-        <img src="resources/header_logo.png" alt="Line Seiki Logo">
+        <img src=<?= base_url('assets_system/images/header_logo.png') ?> alt="Line Seiki Logo">
       </a>
 
       <!-- Toggler for mobile -->
@@ -124,16 +124,16 @@
       <!-- Navigation items -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about_us">About Us</a></li>
 
           <!-- Dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="navbarDropdown" role="button" data-bs-toggle="dropdown">
               Product and Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Products</a></li>
+              <li><a class="dropdown-item" href="ps_prod">Products</a></li>
 
               <!-- Submenu -->
               <li class="dropdown-submenu">
@@ -148,9 +148,9 @@
             </ul>
           </li>
 
-          <li class="nav-item"><a class="nav-link" href="#">News and Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="news_event">News and Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="library">Library</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact_us">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -191,10 +191,10 @@
     <div class="container">
       <h2>Our Partners and Associations</h2>
       <div class="d-flex justify-content-center flex-wrap partner-logos">
-        <img src="resources/partner1.png" alt="Partner 1">
-        <img src="resources/partner2.png" alt="Partner 2">
-        <img src="resources/partner3.png" alt="Partner 3">
-        <img src="resources/partner4.png" alt="Partner 4">
+        <img src=<?= base_url('assets_system/images/macos.png') ?> alt="Partner 1">
+        <img src=<?= base_url('assets_system/images/microsoft.jpg') ?> alt="Partner 2">
+        <img src=<?= base_url('assets_system/images/burgerking.png') ?> alt="Partner 3">
+        <img src=<?= base_url('assets_system/images/abscbn.png') ?> alt="Partner 4">
       </div>
     </div>
   </section>

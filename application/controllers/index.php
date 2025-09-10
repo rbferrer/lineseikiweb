@@ -21,17 +21,17 @@ class index extends CI_Controller
 
   function about_us()
   {
-    var_dump("Page under construction");
+    $this->load->view('aboutus');
   }
 
   function contact_us()
   {
-    var_dump("Page under construction");
+    $this->load->view('contactus');
   }
 
   function library()
   {
-    var_dump("Page under construction");
+    $this->load->view('library');
   }
 
   function news_event()
@@ -46,7 +46,7 @@ class index extends CI_Controller
 
   function ps_prod()
   {
-    var_dump("Page under construction");
+    $this->load->view('ps_prod');
   }
 
   function ps_serv_silicone()

@@ -292,13 +292,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Product and Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Products</a></li>
+              <li><a class="dropdown-item" href="ps_prod">Products</a></li>
               <li class="dropdown-submenu dropend">
                 <a class="dropdown-item dropdown-toggle" href="#">Services</a>
                 <ul class="dropdown-menu">
@@ -309,9 +309,9 @@
               <li><a class="dropdown-item" href="#">IoT Solution</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">News and Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="news_event">News and Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="library">Library</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact_us">Contact Us</a></li>
         </ul>
       </div>
     </div>
