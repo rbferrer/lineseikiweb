@@ -293,7 +293,7 @@
                   <li><a class="dropdown-item" href="#">Silicone Molding & Urethane Casting</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="#">IoT Solution</a></li>
+              <li><a class="dropdown-item" href="ps_iotsolution">IoT Solution</a></li>
             </ul>
           </li>
 

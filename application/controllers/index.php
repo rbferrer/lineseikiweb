@@ -41,7 +41,7 @@ class index extends CI_Controller
 
   function ps_iotsolution()
   {
-    var_dump("Page under construction");
+    $this->load->view('ps_iotsolution');
   }
 
   function ps_prod()
