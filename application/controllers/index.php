@@ -51,7 +51,7 @@ class index extends CI_Controller
 
   function ps_serv_silicone()
   {
-    var_dump("Page under construction");
+    $this->load->view('ps_serv_silicone');
   }
 
   function ps_serv_simulation()

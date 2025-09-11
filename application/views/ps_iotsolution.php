@@ -263,7 +263,7 @@
                 <a class="dropdown-item dropdown-toggle" href="#">Services</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="ps_serv_simulation">Simulation Analysis</a></li>
-                  <li><a class="dropdown-item" href="#">Silicone Molding & Urethane Casting</a></li>
+                  <li><a class="dropdown-item" href="ps+serv_silicone">Silicone Molding & Urethane Casting</a></li>
                 </ul>
               </li>
               <li><a class="dropdown-item" href="ps_iotsolution">IoT Solution</a></li>
