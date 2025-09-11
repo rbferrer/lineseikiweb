@@ -291,27 +291,27 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= base_url() ?>">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('index/about_us') ?>">About Us</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Product and Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="ps_prod">Products</a></li>
+              <li><a class="dropdown-item" href="<?= base_url('index/ps_prod') ?>">Products</a></li>
               <li class="dropdown-submenu dropend">
                 <a class="dropdown-item dropdown-toggle" href="#">Services</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="ps_serv_simulation">Simulation Analysis</a></li>
-                  <li><a class="dropdown-item" href="ps_serv_silicone">Silicone Molding & Urethane Casting</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('index/ps_serv_simulation') ?>">Simulation Analysis</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('index/ps_serv_silicone') ?>">Silicone Molding & Urethane Casting</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="ps_iotsolution">IoT Solution</a></li>
+              <li><a class="dropdown-item" href="<?= base_url('index/ps_iotsolution') ?>">IoT Solution</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="news_event">News and Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="library">Library</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact_us">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('index/news_event') ?>">News and Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('index/library') ?>">Library</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?= base_url('index/contact_us') ?>">Contact Us</a></li>
         </ul>
       </div>
     </div>
