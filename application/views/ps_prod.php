@@ -400,14 +400,14 @@
   </section>
 
 
-  <!--CTA Section (buttons updated) -->
-  <section class="cta">
-    <h2>Looking for the Right Measuring Solution?</h2>
-    <p>Contact us today to discuss your requirements and find the perfect product for your needs.</p>
-    <!-- use the new classes -->
-    <button class="btn btn-contact">Contact</button>
-    <button class="btn btn-consult">Consult</button>
-  </section>
+  <!--CTA Section (updated) -->
+<section class="cta">
+  <h2>Looking for the Right Measuring Solution?</h2>
+  <p>Contact us today to discuss your requirements and find the perfect product for your needs.</p>
+  <!-- changed Contact -> Inquire, removed Consult -->
+  <button class="btn btn-contact">INQUIRE</button>
+</section>
+
 
   <!--Footer (buttons updated) -->
   <footer>
