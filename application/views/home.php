@@ -164,7 +164,7 @@
   <div class="container-fluid">
     <!-- Logo on the LEFT -->
     <a class="navbar-brand" href="#">
-      <img src="<?= base_url('assets_system/images/header_logo.png') ?>" alt="Line Seiki Logo">
+      <img src=<?= base_url('assets_system/images/header_logo.png') ?> alt="Line Seiki Logo">
     </a>
 
     <!-- Toggler for mobile -->
@@ -176,7 +176,7 @@
     <!-- Navigation items -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
 
         <!-- Dropdown -->
@@ -200,9 +200,9 @@
           </ul>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="#">News and Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="news_event">News and Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="library">Library</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact_us">Contact Us</a></li>
       </ul>
     </div>
   </div>
@@ -222,7 +222,7 @@
           <button class="btn btn-secondary">Contact</button>
         </div>
         <div class="col-lg-6">
-          <img src="assets_system/images/home_main.jpg" alt="Section 1">
+          <img src=<?= base_url('assets_system/images/home_main.jpg') ?> alt="Section 1">
         </div>
       </div>
     </div>
@@ -239,7 +239,7 @@
           <button class="btn btn-link text-light"><span>View</span> <i class="fas fa-angle-right"></i></button>
         </div>
         <div class="col-lg-6">
-          <img src="assets_system/images/model.jpg" alt="Section 2">
+          <img src=<?= base_url('assets_system/images/model.jpg') ?> alt="Section 2">
         </div>
       </div>
     </div>
@@ -254,7 +254,7 @@
           <p>Our engineering services are designed to optimize your projects with precision and innovation.</p>
         </div>
         <div class="col-lg-6">
-          <img src="assets_system/images/model2.jpg" alt="Section 3">
+          <img src=<?= base_url('assets_system/images/model2.jpg') ?> alt="Section 3">
         </div>
       </div>
     </div>
@@ -271,7 +271,7 @@
           <button class="btn btn-link text-light"><span>Learn More</span> <i class="fas fa-angle-right"></i></button>
         </div>
         <div class="col-lg-6">
-          <img src="assets_system/images/model3.png" alt="Section 4">
+          <img src=<?= base_url('assets_system/images/model3.png') ?> alt="Section 4">
         </div>
       </div>
     </div>
@@ -282,7 +282,7 @@
     <div class="container text-center">
       <h2>Discover Our Latest Innovations in Industrial Measurement</h2>
       <p class="mb-4">Explore our newest products designed to enhance efficiency and precision in your operations.</p>
-      <img src="assets_system/images/model4.jpg" alt="Section 5" class="img-fluid rounded">
+      <img src=<?= base_url('assets_system/images/model4.jpg') ?> alt="Section 5" class="img-fluid rounded">
     </div>
   </section>
 
@@ -298,7 +298,7 @@
     <p>We’re here to assist with your inquiries and needs.</p>
     <hr class="my-4">
     <div class="d-flex justify-content-between flex-wrap align-items-center">
-      <img src="assets_system/images/header_logo.png" height="40" alt="Logo">
+      <img src=<?= base_url('assets_system/images/header_logo.png') ?> height="40" alt="Logo">
       <div class="links">
         <a href="#">Product Overview</a>
         <a href="#">Engineering Services</a>

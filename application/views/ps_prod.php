@@ -276,7 +276,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="home.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
 
           <!-- Dropdown -->

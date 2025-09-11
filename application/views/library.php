@@ -127,7 +127,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
 
           <!-- ✅ Dropdown -->
@@ -148,7 +148,7 @@
             </ul>
           </li>
 
-          <li class="nav-item"><a class="nav-link" href="news_event">News & Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="news_event">News and Events</a></li>
           <li class="nav-item"><a class="nav-link active" href="library">Library</a></li>
           <li class="nav-item"><a class="nav-link" href="contact_us">Contact Us</a></li>
         </ul>

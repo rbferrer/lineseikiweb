@@ -18,22 +18,33 @@
 
     /* Navbar */
     .navbar {
-      background-color: #0a192f;
+      background: linear-gradient(90deg, #0d1b2a, #1b263b);
+      padding: 0.8rem 5%;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffd60a;
+    }
+    .dropdown-menu {
+      background-color: #1b263b;
+      border: none;
+      border-radius: 8px;
+    }
+    .dropdown-menu a {
+      color: #fff;
+    }
+    .dropdown-menu a:hover {
+      background-color: #ffd60a;
+      color: #000;
     }
     .navbar-brand img {
       height: 40px;
+      width: auto;
     }
-    .navbar-nav .nav-link {
-      color: white !important;
-      margin: 0 10px;
-      transition: 0.3s;
-    }
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-      color: #ffd60a !important;
-    }
-
-    /* Dropdown submenu */
     .dropdown-submenu {
       position: relative;
     }
@@ -124,7 +135,7 @@
       <!-- Navigation items -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="about_us">About Us</a></li>
 
           <!-- Dropdown -->
