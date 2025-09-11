@@ -634,8 +634,8 @@ footer img[alt="Logo"] {
     <!-- Navigation items -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about_us">About Us</a></li>
 
         <!-- Dropdown -->
         <li class="nav-item dropdown">
@@ -643,13 +643,13 @@ footer img[alt="Logo"] {
             Product and Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Products</a></li>
+            <li><a class="dropdown-item" href="ps_prod">Products</a></li>
 
             <!-- Submenu -->
             <li class="dropdown-submenu">
               <a class="dropdown-item dropdown-toggle" href="#">Services</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Simulation Analysis</a></li>
+                <li><a class="dropdown-item" href="ps_serv_simulation">Simulation Analysis</a></li>
                 <li><a class="dropdown-item" href="#">Silicone Molding & Urethane Casting</a></li>
               </ul>
             </li>
@@ -658,9 +658,9 @@ footer img[alt="Logo"] {
           </ul>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="#">News and Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="news_event">News and Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="library">Library</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact_us">Contact Us</a></li>
       </ul>
     </div>
   </div>
