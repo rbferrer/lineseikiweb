@@ -10,6 +10,10 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+
+  
 
   <style>
     body {
@@ -72,7 +76,6 @@
     }
     section p {
       margin-bottom: 20px
-      font-size: 20px;
     }
 
     /* Color schemes */
@@ -120,47 +123,20 @@
       background: #0077b6;
       color: #fff;
     }
-
-    /* Footer */
-    footer {
-      background-color: #0d1b2a;
-      color: white;
-      padding: 60px 10%;
-    }
-    footer h2 {
-      color: #ffd60a;
-    }
-    footer .links a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 20px;
-    }
-    footer .links a:hover {
-      text-decoration: underline;
-      color: #ffd60a;
-    }
-    footer .socials a {
-      color: white;
-      margin-right: 15px;
-      font-size: 1.3rem;
-      transition: color 0.3s;
-    }
-    footer .socials a:hover {
-      color: #ffd60a;
-    }
-    footer .bottom {
-      margin-top: 20px;
-      font-size: 0.85rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+                                f
     .container-one {
             max-width: 960px;
             margin: 0 auto;
             text-align: center;
+            
+    
         }
+        .container-one h2 {
+  text-align: center;   /* center the heading */
+  margin-bottom: 20px;
+  color: #ffd60a;
+}
+
          .types-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -203,10 +179,10 @@
             display: inline-block;
             margin-top: 10px;
             padding: 5px 15px;
-            background-color: transparent;
-            color: #ffd60a;
+            background-color: #023e8a;
+            color: #ffffffff;
             text-decoration: none;
-            border: 1px solid #ffd60a;
+            border: 1px solid #023e8a ;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -370,7 +346,273 @@
   color: #023e8a;
 }
 
-        
+    .quote-box {
+      border: 2px solid #4a3cff;
+      border-radius: 8px;
+      padding: 20px 30px;
+      text-align: center;
+      max-width: 320px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .quote-box:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transform: translateY(-3px);
+    }
+
+    .quote-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 8px;
+    }
+
+    .quote-subtitle {
+      font-size: 14px;
+      color: #444;
+    }
+    
+  /* preview */
+  .portal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   padding: 60px 20px;
+  background-color: transparent; /* remove the blue background */
+  font-family: 'Roboto', sans-serif; /* Using a common modern sans-serif font */
+}
+
+.upload-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 5px solid #4a90e2; /* A subtle accent color at the top */
+}
+
+.icon-header {
+  font-size: 3.5rem;
+  color: #4a90e2; /* Matching the accent color */
+  margin-bottom: 1rem;
+}
+
+.upload-section h2 {
+  font-size: 1.7rem;
+  color: #333;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+.upload-section .description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.8rem;
+  line-height: 1.5;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.custom-file-upload:hover {
+  background-color: #357ABD;
+}
+
+.custom-file-upload .fas {
+  margin-right: 8px;
+}
+
+.selected-file-name {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.submit-project-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-weight: 500;
+}
+
+.submit-project-btn:hover {
+  background-color: #218838;
+}
+/* CTA */
+.cta-card {
+  background: #0a192f;
+  color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 40rem;
+  min-height: 400px;   /* ⬅️ makes it taller */
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cta-card:hover {
+  transform: scale(1.05);
+}
+
+/* Title */
+.cta-title {
+  font-size: 2rem; /* text-3xl */
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff !important;    /* heading in white */
+}
+
+@media (min-width: 768px) {
+  .cta-title {
+    font-size: 2.25rem; /* text-4xl */
+  }
+}
+
+/* Subtitle */
+.cta-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  color: #fff !important;    /* paragraph in white */
+  
+}
+
+@media (min-width: 768px) {
+  .cta-subtitle {
+    font-size: 1.125rem;
+  }
+}
+
+/* Buttons container */
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;   /* ⬅️ centers buttons horizontally */
+}
+
+@media (min-width: 640px) {
+  .cta-buttons {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center; /* keeps them centered in row view */
+    align-items: center;
+  }
+}
+/* Section 5 CTA Button Styles */
+.cta-buttons .btn-primary {
+  background-color: #0077b6;   /* solid blue */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn-primary:hover {
+  background-color: #0077b6;   /* darker blue on hover */
+}
+
+/* Yellow/Black button */
+.cta-buttons .btn-secondary {
+  background-color: #0a192f;      /* black background */
+  color: #ffd60a;              /* yellow text */
+  border: 2px solid #ffd60a;   /* yellow border */
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: #ffd60a;   /* yellow background */
+  color: #000;                 /* black text */
+}
+ footer {
+      background-color: #0d1b2a;
+      color: white;
+      padding: 60px 10%;
+    }
+    footer h2 {
+      color: #ffd60a;
+    }
+    footer .links a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    footer .links a:hover {
+      text-decoration: underline;
+      color: #ffd60a;
+    }
+    footer .socials a {
+      color: white;
+      margin-right: 15px;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+    footer .socials a:hover {
+      color: #ffd60a;
+    }
+    footer .bottom {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.footer-logo-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;   /* space between logo and links */
+}
+
+.footer-logo {
+  height: 28px;   /* smaller logo */
+  width: auto;
+}
+footer img[alt="Logo"] {
+  height: 40px;   /* smaller logo */
+  width: auto;
+  margin-right: 20px;  /* spacing from links */
+}
+
+
   </style>
 </head>
 <body>
@@ -486,6 +728,7 @@ Analysis settings that can be adjusted to meet the needs of customers.<br><br>
         </div>
     </div>
 </div>
+</section>
 <br>
 <br>
 <br>
@@ -533,6 +776,48 @@ Analysis settings that can be adjusted to meet the needs of customers.<br><br>
 </section>
   </section>
 
+<!-- Section 4 (navy) -->
+
+<section class="section-navy">
+  <div class="container-one">
+    <div class="portal-wrapper">
+      <div class="upload-section">
+        <div class="icon-header">
+          <i class="fas fa-file-upload"></i>
+        </div>
+        <h2>Project Submission</h2>
+        <p class="description">Upload your CAD models or design drawings to receive a detailed quote.</p>
+        <label for="file-upload" class="custom-file-upload">
+          <i class="fas fa-paperclip"></i> Select File
+        </label>
+        <input id="file-upload" type="file" style="display: none;">
+        <span id="file-name" class="selected-file-name">No file selected</span>
+        <button class="submit-project-btn">Request Quote</button>
+      </div> <!-- upload-section -->
+    </div>   <!-- portal-wrapper -->
+  </div>     <!-- container-one -->
+</section>   <!-- section-navy -->
+
+
+<!-- Section 5 (white) -->
+  <!-- Section 5 (white) -->
+<section class="section-white">
+  <div class="container d-flex justify-content-center">
+    <div class="cta-card"><br><br><br>
+      <h2 class="cta-title">Your Next Project Awaits</h2>
+      <p class="cta-subtitle">
+        Let's collaborate to create something truly exceptional.<br> Our team is ready to help you bring your vision to life.
+      </p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">INQUIRE</a>
+        <a href="#" class="btn btn-secondary">PURCHASE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
   <!-- Footer -->
   <footer>
     <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
@@ -545,7 +830,7 @@ Analysis settings that can be adjusted to meet the needs of customers.<br><br>
     <p>We’re here to assist with your inquiries and needs.</p>
     <hr class="my-4">
     <div class="d-flex justify-content-between flex-wrap align-items-center">
-      <img src="assets_system/images/header_logo.png" height="40" alt="Logo">
+      <img src="<?= base_url('assets_system/images/header_logo.png') ?>" height="40" alt="Logo">
       <div class="links">
         <a href="#">Product Overview</a>
         <a href="#">Engineering Services</a>
@@ -602,6 +887,11 @@ Analysis settings that can be adjusted to meet the needs of customers.<br><br>
         });
       });
     });
+    // Simple JavaScript to display the selected file name
+  document.getElementById('file-upload').addEventListener('change', function() {
+    const fileName = this.files.length > 0 ? this.files[0].name : 'No file selected';
+    document.getElementById('file-name').textContent = fileName;
+  });
   </script>
 </body>
 </html>
